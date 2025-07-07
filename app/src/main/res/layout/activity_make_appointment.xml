@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_make_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="预约医生"
+            android:titleTextColor="@android:color/white"
+            android:background="#3F51B5" />
+
+        <!-- 医生姓名 -->
+        <TextView
+            android:id="@+id/tv_doctor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="医生姓名：医生甲"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- 所在科室 -->
+        <TextView
+            android:id="@+id/tv_department_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="科室：儿科"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp" />
+
+        <!-- 擅长方向 -->
+        <TextView
+            android:id="@+id/tv_doctor_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="擅长方向：啊啊啊"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp" />
+
+        <!-- 可预约时间段 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择预约时间"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+        <!-- RecyclerView 用于展示时间段 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 预约按钮 -->
+        <Button
+            android:id="@+id/btn_confirm_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="确认预约"
+            android:layout_marginTop="24dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#3F51B5" />
+    </LinearLayout>
+</ScrollView>

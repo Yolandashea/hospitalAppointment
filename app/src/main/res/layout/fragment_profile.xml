@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 用户信息卡片 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- 标题栏 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人信息"
+            android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- 用户信息项 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- 用户名 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp"
+                        android:background="#F8F8F8"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="用户名"
+                            android:textColor="#666666"
+                            android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="张三"
+                            android:textColor="#333333"
+                            android:textSize="14sp"
+                            android:gravity="end"/>
+                    </LinearLayout>
+
+                    <!-- 手机号 -->
+                    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp"
+                        android:background="#F8F8F8"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="手机号"
+                            android:textColor="#666666"
+                            android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="13800138000"
+                            android:textColor="#333333"
+                            android:textSize="14sp"
+                            android:gravity="end"/>
+                    </LinearLayout>
+
+                    <!-- 身份证号 -->
+                    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp"
+                        android:background="#F8F8F8"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="身份证号"
+                            android:textColor="#666666"
+                            android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_idcard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="123456789012345678"
+                            android:textColor="#333333"
+                            android:textSize="14sp"
+                            android:gravity="end"/>
+                    </LinearLayout>
+
+                    <!-- 性别 -->
+                    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp"
+                        android:background="#F8F8F8"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="性别"
+                            android:textColor="#666666"
+                            android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_gender"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="男"
+                            android:textColor="#333333"
+                            android:textSize="14sp"
+                            android:gravity="end"/>
+                    </LinearLayout>
+
+                    <!-- 年龄 -->
+                    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp"
+                        android:background="#F8F8F8">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="年龄"
+                            android:textColor="#666666"
+                            android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_age"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="28"
+                            android:textColor="#333333"
+                            android:textSize="14sp"
+                            android:gravity="end"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 功能按钮卡片 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+        <!-- 我的收藏 -->
+<!--        <Button-->
+<!--            android:id="@+id/btn_my_favorites"-->
+<!--            android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--            android:text="我的收藏"-->
+<!--                    android:textColor="#333333"-->
+<!--                    android:backgroundTint="#F8F8F8"-->
+<!--                    android:layout_marginBottom="8dp"/>-->
+
+        <!-- 修改密码 -->
+        <Button
+            android:id="@+id/btn_change_password"
+            android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:text="修改密码"
+                    android:textColor="#333333"
+                    android:backgroundTint="#F8F8F8"
+                    android:layout_marginBottom="8dp"/>
+
+        <!-- 用户协议 -->
+        <Button
+            android:id="@+id/btn_user_agreement"
+            android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="用户协议"
+                    android:textColor="#333333"
+                    android:backgroundTint="#F8F8F8"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 退出登录按钮 -->
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出登录"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF4444"
+            android:layout_marginTop="32dp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
